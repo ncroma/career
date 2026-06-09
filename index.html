@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Nuno Roma — Full Stack Developer</title>
+        <title>Nuno Roma - Full Stack Developer</title>
 
         <meta name="description" content="Full Stack Developer specialized in frontend engineering, with a strong background in QA, test automation, and agile delivery." />
         <meta name="author" content="Nuno Roma" />
@@ -14,7 +14,7 @@
 
         <meta property="og:type" content="profile" />
         <meta property="og:site_name" content="Nuno Roma" />
-        <meta property="og:title" content="Nuno Roma — Full Stack Developer" />
+        <meta property="og:title" content="Nuno Roma - Full Stack Developer" />
         <meta property="og:description" content="Full Stack Developer specialized in frontend engineering, with a strong background in QA, test automation, and agile delivery." />
         <meta property="og:url" content="https://nunoroma.github.io/" />
         <meta property="og:image" content="https://nunoroma.github.io/profile-picture.png" />
@@ -24,7 +24,7 @@
         <meta property="profile:last_name" content="Roma" />
 
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Nuno Roma — Full Stack Developer" />
+        <meta name="twitter:title" content="Nuno Roma - Full Stack Developer" />
         <meta name="twitter:description" content="Full Stack Developer specialized in frontend engineering, with a strong background in QA, test automation, and agile delivery." />
         <meta name="twitter:image" content="https://nunoroma.github.io/profile-picture.png" />
         <meta name="twitter:image:alt" content="Portrait of Nuno Roma" />
@@ -476,6 +476,11 @@
                 padding: 72px 0;
                 border-bottom: 1px solid var(--line);
             }
+            @media (max-width: 560px) {
+                .sec {
+                    padding: 48px 0;
+                }
+            }
             .sec .wrap {
                 display: grid;
                 grid-template-columns: var(--rail) 1fr;
@@ -751,6 +756,10 @@
                 color: var(--ink);
                 letter-spacing: -0.015em;
                 margin-bottom: 8px;
+
+                @media (max-width: 560px) {
+                    line-height: 1.4;
+                }
             }
             .tenets p {
                 font-size: var(--t-sm);
@@ -988,6 +997,7 @@
                 .entry {
                     grid-template-columns: 1fr;
                     gap: 8px;
+                    padding: 4px 0 32px;
                 }
                 .hero {
                     padding: 56px 0 48px;
@@ -1026,7 +1036,8 @@
                 .sec {
                     padding: 32px 0 !important;
                 }
-                :root, [data-theme="dark"] {
+                :root,
+                [data-theme="dark"] {
                     --paper: #ffffff;
                     --surface: #ffffff;
                     --ink: #111111;
@@ -1156,7 +1167,7 @@
                     </p>
                     <p>
                         My background spans from QA engineering to software development, giving me an unusually broad perspective on what it takes to ship something that holds. That same eye for what
-                        can go wrong also shows one what could be better — I pay attention to that gap and find the moments inside a feature where the difference between good and
+                        can go wrong also shows one what could be better: I pay attention to that gap and find the moments inside a feature where the difference between good and
                         <span class="hl">excellent</span> gets decided.
                     </p>
                 </div>
@@ -1180,9 +1191,9 @@
                         <p>Two distinct surfaces, each requiring a different frontend focus:</p>
                         <div class="split">
                             <article class="card">
-                                <div class="card-shot card-shot--portal"><img src="aptoide-connect-portal.png" alt="Aptoide Connect — Portal" /></div>
+                                <div class="card-shot card-shot--portal"><img src="aptoide-connect-portal.png" alt="Aptoide Connect - Portal" /></div>
                                 <div class="for">The Portal</div>
-                                <p>The public-facing entry point for all of Aptoide Connect's services — the first surface developers and app store partners interact with.</p>
+                                <p>The public-facing entry point for all of Aptoide Connect's services, the first surface developers and app store partners interact with.</p>
                                 <p style="margin-top: 10px">
                                     This is where I pushed hardest on frontend craft: SEO architecture, performance optimization, mobile-first development, and rigorous cross-browser QA to deliver the
                                     best possible front page for the product.
@@ -1195,15 +1206,15 @@
                                 </div>
                             </article>
                             <article class="card">
-                                <div class="card-shot card-shot--console"><img src="aptoide-connect-console.png" alt="Aptoide Connect — Console" /></div>
+                                <div class="card-shot card-shot--console"><img src="aptoide-connect-console.png" alt="Aptoide Connect - Console" /></div>
                                 <div class="for">The Console</div>
                                 <p>
                                     A management platform serving two distinct user types: developers submitting and managing app lifecycles, integrating billing SDKs, and tracking distribution
-                                    metrics — and app store partners controlling and optimizing the monetization and distribution streams fed by our catalog.
+                                    metrics; and app store partners controlling and optimizing the monetization and distribution streams fed by our catalog.
                                 </p>
                                 <p style="margin-top: 10px">
                                     This meant implementing and maintaining features like payment flows, a deeply configurable app distribution layer, wallet and funds management, and a multi-state
-                                    account system covering distinct user roles, granular permissions, and authentication settings — all fully responsive across desktop and mobile.
+                                    account system covering distinct user roles, granular permissions, and authentication settings. All fully responsive across desktop and mobile.
                                 </p>
                                 <div class="stack">
                                     <span class="chip">Business-critical Flows</span>
@@ -1248,8 +1259,8 @@
                                     <h4>The Developer-QA Model</h4>
                                     <p>
                                         I became the first developer-QA on the team, someone who both <span class="hl">develops and tests</span>. It proved its worth and became the standard: everyone
-                                        develops, everyone tests. The dedicated QA role dissolved into the team, but the testing automation didn't — it became a household tool the team kept evolving,
-                                        and in some form it's still running today.
+                                        develops, everyone tests. The dedicated QA role dissolved into the team, but the testing automation didn't: it became a household tool the team kept maintaining
+                                        and evolving, and in some form it's still running today.
                                     </p>
                                 </div>
                             </div>
@@ -1281,8 +1292,8 @@
                                     <p>
                                         When AI entered our workflow everything accelerated. That's when my QA background showed its real value: moving fast with AI requires knowing exactly what to
                                         verify. The Portal was migrated from Angular to React, unlocking proper SSR (a migration that would have been impractical without AI). My productivity spiked,
-                                        and the bandwidth that created is where I started crossing into backend territory for the first time — picking up Node.js tasks and taking my first real steps
-                                        as a <span class="hl">full-stack developer</span>.
+                                        and the bandwidth that created is where I started crossing into backend territory for the first time, picking up Node.js tasks and taking my first real steps as
+                                        a <span class="hl">full-stack developer</span>.
                                     </p>
                                 </div>
                             </div>
@@ -1299,7 +1310,7 @@
                     >Manifesto
                 </div>
                 <div class="sec-body">
-                    <p class="lead" style="margin-bottom: 30px">The principles that shape how I build, test, and ship software — refined over years of doing all three.</p>
+                    <p class="lead" style="margin-bottom: 30px">The principles that shape how I build, test, and ship software, refined over years of doing all three.</p>
                     <ol class="tenets">
                         <li>
                             <div>
@@ -1310,7 +1321,7 @@
                         <li>
                             <div>
                                 <h4>Quality Is Not a Phase</h4>
-                                <p>Quality isn't a phase at the end of development — it's a discipline baked into every step.</p>
+                                <p>Quality isn't a phase at the end of development, it's a discipline baked into every step.</p>
                             </div>
                         </li>
                         <li>
@@ -1333,7 +1344,7 @@
                 <div class="sec-body">
                     <div class="log">
                         <div class="entry">
-                            <div class="when">2025 — 2026</div>
+                            <div class="when">2025 - 2026</div>
                             <div>
                                 <div class="role">Full Stack Engineer <span class="at">· Aptoide</span></div>
                                 <div class="where">Lisbon, Portugal</div>
@@ -1344,7 +1355,7 @@
                             </div>
                         </div>
                         <div class="entry">
-                            <div class="when">2021 — 2025</div>
+                            <div class="when">2021 - 2025</div>
                             <div>
                                 <div class="role">Front End Engineer <span class="at">· Aptoide</span></div>
                                 <div class="where">Lisbon, Portugal</div>
@@ -1352,7 +1363,7 @@
                             </div>
                         </div>
                         <div class="entry">
-                            <div class="when">2020 — 2021</div>
+                            <div class="when">2020 - 2021</div>
                             <div>
                                 <div class="role">QA Engineer & Scrum Master <span class="at">· Aptoide</span></div>
                                 <div class="where">Lisbon, Portugal</div>
@@ -1360,7 +1371,7 @@
                             </div>
                         </div>
                         <div class="entry">
-                            <div class="when">2019 — 2020</div>
+                            <div class="when">2019 - 2020</div>
                             <div>
                                 <div class="role">QA Automation Engineer <span class="at">· Aptoide</span></div>
                                 <div class="where">Lisbon, Portugal</div>
@@ -1368,7 +1379,7 @@
                             </div>
                         </div>
                         <div class="entry">
-                            <div class="when">2018 — 2019</div>
+                            <div class="when">2018 - 2019</div>
                             <div>
                                 <div class="role">QA Automation Engineer <span class="at">· Celfocus</span></div>
                                 <div class="where">Lisbon, Portugal</div>
@@ -1379,7 +1390,7 @@
                             </div>
                         </div>
                         <div class="entry">
-                            <div class="when">2016 — 2018</div>
+                            <div class="when">2016 - 2018</div>
                             <div>
                                 <div class="role">Quality Assurance Engineer <span class="at">· PacSis – Linking Consumers & Brands</span></div>
                                 <div class="where">Lisbon, Portugal</div>
@@ -1402,11 +1413,11 @@
                         <article class="degree">
                             <div class="degree-top">
                                 <h4>Bachelor's Degree · Computer Science</h4>
-                                <div class="degree-when">2010 — 2014</div>
+                                <div class="degree-when">2010 - 2014</div>
                             </div>
                             <div class="degree-sub">Instituto Superior Miguel Torga, Coimbra</div>
                             <p>
-                                Three-year programme covering programming, software engineering, databases, web development, and operating systems — with a software development track focused on system
+                                Three-year programme covering programming, software engineering, databases, web development, and operating systems, with a software development track focused on system
                                 architecture and application lifecycle from specification through testing.
                             </p>
                             <div class="grades">
@@ -1468,7 +1479,6 @@
                     }
                 }
 
-                // On load: saved preference wins, else follow system
                 apply(saved ? saved === "dark" : sys());
 
                 btn.addEventListener("click", () => {
@@ -1478,7 +1488,6 @@
                     localStorage.setItem("theme", next ? "dark" : "light");
                 });
 
-                // React to system changes only if user hasn't manually chosen
                 window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", (e) => {
                     if (!localStorage.getItem("theme")) apply(e.matches);
                 });
@@ -1490,7 +1499,6 @@
                 const wrong = "Roma";
                 const right = "Nuno Roma";
 
-                // Variable typing delays — heavier chars, after spaces, slightly erratic
                 const typeDelay = () => 80 + Math.random() * 90;
                 const deleteDelay = () => 55 + Math.random() * 45;
                 const jitter = (base) => base + (Math.random() - 0.5) * 30;
@@ -1499,7 +1507,6 @@
 
                 function type(text, i, cb) {
                     if (i >= text.length) return cb && cb();
-                    // Slight pause after space, like a real typist
                     const delay = text[i] === " " ? jitter(160) : typeDelay();
                     setTimeout(() => {
                         current += text[i];
@@ -1517,17 +1524,11 @@
                     }, deleteDelay());
                 }
 
-                // Initial pause before starting
                 setTimeout(() => {
-                    // Type "Nuno Mig"
                     type(wrong, 0, () => {
-                        // Pause — user notices mistake
                         setTimeout(() => {
-                            // Delete everything
                             del(wrong.length, () => {
-                                // Brief pause before retyping
                                 setTimeout(() => {
-                                    // Type the correct name
                                     type(right, 0);
                                 }, 380);
                             });
