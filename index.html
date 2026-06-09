@@ -1,0 +1,1485 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Nuno Roma — Full Stack Developer</title>
+
+        <meta name="description" content="Full Stack Developer specialized in frontend engineering, with a strong background in QA, test automation, and agile delivery." />
+        <meta name="author" content="Nuno Roma" />
+        <meta name="keywords" content="Nuno Roma, Full Stack Developer, Frontend Developer, QA, Test Automation, Scrum Master, Aptoide, Portugal" />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+        <meta name="theme-color" content="#2B55E6" />
+        <link rel="canonical" href="https://nunoroma.github.io/" />
+
+        <meta property="og:type" content="profile" />
+        <meta property="og:site_name" content="Nuno Roma" />
+        <meta property="og:title" content="Nuno Roma — Full Stack Developer" />
+        <meta property="og:description" content="Full Stack Developer specialized in frontend engineering, with a strong background in QA, test automation, and agile delivery." />
+        <meta property="og:url" content="https://nunoroma.github.io/" />
+        <meta property="og:image" content="https://nunoroma.github.io/profile-picture.png" />
+        <meta property="og:image:alt" content="Portrait of Nuno Roma" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="profile:first_name" content="Nuno" />
+        <meta property="profile:last_name" content="Roma" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Nuno Roma — Full Stack Developer" />
+        <meta name="twitter:description" content="Full Stack Developer specialized in frontend engineering, with a strong background in QA, test automation, and agile delivery." />
+        <meta name="twitter:image" content="https://nunoroma.github.io/profile-picture.png" />
+        <meta name="twitter:image:alt" content="Portrait of Nuno Roma" />
+
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "ProfilePage",
+                "url": "https://nunoroma.github.io/",
+                "mainEntity": {
+                    "@type": "Person",
+                    "name": "Nuno Roma",
+                    "givenName": "Nuno",
+                    "familyName": "Roma",
+                    "jobTitle": "Full Stack Developer",
+                    "description": "Full Stack Developer specialized in frontend engineering, with a strong background in QA, test automation, and agile delivery.",
+                    "url": "https://nunoroma.github.io/",
+                    "image": "https://nunoroma.github.io/profile-picture.png",
+                    "nationality": "Portuguese",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "addressCountry": "PT"
+                    },
+                    "worksFor": {
+                        "@type": "Organization",
+                        "name": "Aptoide",
+                        "url": "https://www.aptoide.com"
+                    },
+                    "knowsAbout": ["Frontend Development", "Full Stack Development", "QA and Test Automation", "Agile and Scrum", "Software Engineering", "Web Performance", "CI/CD"],
+                    "email": "mailto:ncroma@gmail.com",
+                    "sameAs": ["https://www.linkedin.com/in/nuno-coimbra-roma"]
+                }
+            }
+        </script>
+
+        <script>
+            (function () {
+                var saved = localStorage.getItem("theme");
+                var dark = saved ? saved === "dark" : window.matchMedia("(prefers-color-scheme: dark)").matches;
+                document.documentElement.setAttribute("data-theme", dark ? "dark" : "light");
+            })();
+        </script>
+        <link rel="icon" type="image/png" href="favicon.png" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" />
+        <style>
+            :root {
+                --paper: #f7f6f1;
+                --surface: #ffffff;
+                --panel: #eef0f4;
+                --ink: #14202f;
+                --slate: #586173;
+                --muted: #8a93a1;
+                --faint: #aeb4be;
+                --line: #e4e3dc;
+                --line-2: #dadde4;
+
+                --accent: #2b55e6;
+                --accent-ink: #1e40be;
+                --accent-soft: #e9edfc;
+                --accent-line: rgba(43, 85, 230, 0.26);
+            }
+
+            [data-theme="dark"] {
+                --paper: #0f1117;
+                --surface: #181b23;
+                --panel: #1e2230;
+                --ink: #e8ecf1;
+                --slate: #8a95a8;
+                --muted: #5c6475;
+                --faint: #3a3f4e;
+                --line: #252a36;
+                --line-2: #2a2f3d;
+
+                --accent: #4d71f0;
+                --accent-ink: #7a9af5;
+                --accent-soft: #1a2340;
+                --accent-line: rgba(77, 113, 240, 0.3);
+                --sh-card: 0 1px 2px rgba(0,0,0,0.2), 0 10px 28px -16px rgba(0,0,0,0.4);
+            }
+
+            @media (prefers-color-scheme: dark) {
+                :root:not([data-theme="light"]) {
+                    --paper: #0f1117;
+                    --surface: #181b23;
+                    --panel: #1e2230;
+                    --ink: #e8ecf1;
+                    --slate: #8a95a8;
+                    --muted: #5c6475;
+                    --faint: #3a3f4e;
+                    --line: #252a36;
+                    --line-2: #2a2f3d;
+
+                    --accent: #4d71f0;
+                    --accent-ink: #7a9af5;
+                    --accent-soft: #1a2340;
+                    --accent-line: rgba(77, 113, 240, 0.3);
+                    --sh-card: 0 1px 2px rgba(0,0,0,0.2), 0 10px 28px -16px rgba(0,0,0,0.4);
+                }
+            }
+
+            :root {
+
+                --mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+                --sans: "IBM Plex Sans", system-ui, -apple-system, sans-serif;
+
+                --t-micro: 11px;
+                --t-meta: 12.5px;
+                --t-sm: 14px;
+                --t-body: 16.5px;
+                --t-lg: 19px;
+                --t-h4: 21px;
+                --t-h3: 26px;
+                --t-h2: 32px;
+                --t-h1: 46px;
+                --t-mega: 62px;
+
+                --maxw: 1080px;
+                --rail: 188px;
+                --sh-card: 0 1px 2px rgba(20, 32, 47, 0.04), 0 10px 28px -16px rgba(20, 32, 47, 0.16);
+            }
+
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+            html {
+                scroll-behavior: smooth;
+                scroll-padding-top: 88px;
+                -webkit-text-size-adjust: 100%;
+            }
+            body {
+                background: var(--paper);
+                color: var(--ink);
+                font-family: var(--sans);
+                font-size: var(--t-body);
+                line-height: 1.62;
+                -webkit-font-smoothing: antialiased;
+                text-rendering: optimizeLegibility;
+            }
+            ::selection {
+                background: var(--accent-soft);
+                color: var(--accent-ink);
+            }
+            a {
+                color: inherit;
+                text-decoration: none;
+            }
+
+            .wrap {
+                max-width: var(--maxw);
+                margin: 0 auto;
+                padding: 0 40px;
+            }
+
+            .topbar {
+                position: sticky;
+                top: 0;
+                z-index: 50;
+                background: rgba(247, 246, 241, 0.82);
+                backdrop-filter: saturate(1.4) blur(10px);
+                border-bottom: 1px solid var(--line);
+            }
+            [data-theme="dark"] .topbar {
+                background: rgba(15, 17, 23, 0.85);
+            }
+            @media (prefers-color-scheme: dark) {
+                :root:not([data-theme="light"]) .topbar {
+                    background: rgba(15, 17, 23, 0.85);
+                }
+            }
+            .topbar .wrap {
+                display: flex;
+                align-items: center;
+                gap: 24px;
+                height: 64px;
+            }
+            .tb-mark {
+                font-family: var(--mono);
+                font-size: var(--t-sm);
+                font-weight: 600;
+                letter-spacing: -0.01em;
+                color: var(--ink);
+                display: flex;
+                align-items: center;
+                gap: 9px;
+            }
+            .tb-mark .live {
+                width: 7px;
+                height: 7px;
+                border-radius: 50%;
+                background: #22c55e;
+                box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.45);
+                animation: pulse 2.6s ease-out infinite;
+            }
+            @keyframes pulse {
+                0% {
+                    box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.45);
+                }
+                70% {
+                    box-shadow: 0 0 0 7px rgba(34, 197, 94, 0);
+                }
+                100% {
+                    box-shadow: 0 0 0 0 rgba(43, 85, 230, 0);
+                }
+            }
+            .tb-nav {
+                margin-left: auto;
+                display: flex;
+                gap: 4px;
+            }
+            .tb-nav a {
+                font-family: var(--mono);
+                font-size: var(--t-meta);
+                color: var(--muted);
+                white-space: nowrap;
+                padding: 6px 11px;
+                border-radius: 7px;
+                transition:
+                    color 0.15s ease,
+                    background 0.15s ease;
+            }
+            .tb-nav a .n {
+                color: var(--faint);
+                margin-right: 6px;
+            }
+            .tb-nav a:hover {
+                color: var(--ink);
+                background: var(--panel);
+            }
+            .tb-nav a.on {
+                color: var(--accent-ink);
+            }
+            .tb-nav a.on .n {
+                color: var(--accent);
+            }
+            .tb-theme {
+                background: none;
+                border: 1px solid var(--line-2);
+                border-radius: 8px;
+                width: 34px;
+                height: 34px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                color: var(--muted);
+                transition: border-color 0.15s, color 0.15s;
+                flex-shrink: 0;
+            }
+            .tb-theme:hover { border-color: var(--accent); color: var(--accent); }
+            .tb-theme svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+            .tb-theme .icon-moon { display: none; }
+            [data-theme="dark"] .tb-theme .icon-sun,
+            .is-dark .tb-theme .icon-sun { display: none; }
+            [data-theme="dark"] .tb-theme .icon-moon,
+            .is-dark .tb-theme .icon-moon { display: block; }
+
+            .tb-cta {
+                font-family: var(--mono);
+                font-size: var(--t-meta);
+                font-weight: 500;
+                white-space: nowrap;
+                color: #fff;
+                background: var(--accent);
+                padding: 8px 14px;
+                border-radius: 8px;
+                transition:
+                    background 0.15s ease,
+                    transform 0.12s ease;
+            }
+            .tb-cta:hover {
+                background: var(--accent-ink);
+            }
+            .tb-cta:active {
+                transform: translateY(1px);
+            }
+
+            .hero {
+                padding: 84px 0 64px;
+                border-bottom: 1px solid var(--line);
+            }
+            .hero .wrap {
+                display: grid;
+                grid-template-columns: 1fr auto;
+                gap: 56px;
+                align-items: start;
+            }
+            .kick {
+                font-family: var(--mono);
+                font-size: var(--t-meta);
+                color: var(--accent);
+                letter-spacing: 0.02em;
+                margin-bottom: 22px;
+            }
+            .kick::before {
+                content: "// ";
+                color: var(--faint);
+            }
+            .name {
+                font-size: var(--t-mega);
+                font-weight: 700;
+                line-height: 1;
+                letter-spacing: -0.035em;
+                color: var(--ink);
+            }
+            .caret {
+                display: inline-block;
+                width: 0.5ch;
+                height: 0.82em;
+                margin-left: 6px;
+                background: var(--accent);
+                transform: translateY(2px);
+                animation: blink 1.15s steps(1) infinite;
+            }
+            @keyframes blink {
+                0%,
+                50% {
+                    opacity: 1;
+                }
+                50.01%,
+                100% {
+                    opacity: 0;
+                }
+            }
+            .tagline {
+                margin-top: 26px;
+                font-size: var(--t-lg);
+                line-height: 1.5;
+                color: var(--slate);
+                max-width: 30ch;
+            }
+            .tagline b {
+                color: var(--ink);
+                font-weight: 600;
+            }
+            .hero-meta {
+                margin-top: 26px;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 8px 18px;
+                font-family: var(--mono);
+                font-size: var(--t-meta);
+                color: var(--muted);
+            }
+            .hero-meta span {
+                display: inline-flex;
+                align-items: center;
+                gap: 7px;
+            }
+            .hero-meta svg {
+                width: 14px;
+                height: 14px;
+                stroke: var(--accent);
+                fill: none;
+                stroke-width: 1.7;
+            }
+            .cta {
+                margin-top: 34px;
+                display: flex;
+                gap: 12px;
+                flex-wrap: wrap;
+            }
+            .btn {
+                display: inline-flex;
+                align-items: center;
+                gap: 9px;
+                font-family: var(--mono);
+                font-size: var(--t-sm);
+                font-weight: 500;
+                padding: 11px 18px;
+                border-radius: 9px;
+                border: 1px solid var(--line-2);
+                background: var(--surface);
+                color: var(--ink);
+                transition:
+                    border-color 0.15s ease,
+                    background 0.15s ease,
+                    transform 0.12s ease,
+                    box-shadow 0.15s ease;
+            }
+            .btn svg {
+                width: 16px;
+                height: 16px;
+                stroke: currentColor;
+                fill: none;
+                stroke-width: 1.7;
+            }
+            .btn:hover {
+                border-color: var(--accent-line);
+                box-shadow: var(--sh-card);
+                transform: translateY(-1px);
+            }
+            .btn.primary {
+                background: var(--accent);
+                border-color: var(--accent);
+                color: #fff;
+            }
+            .btn.primary:hover {
+                background: var(--accent-ink);
+            }
+            .btn:active {
+                transform: translateY(0);
+            }
+
+            .hero-portrait {
+                width: 208px;
+            }
+            .hero-portrait .portrait-img {
+                display: block;
+                width: 208px;
+                height: 248px;
+                border-radius: 14px;
+                border: 1px solid var(--line-2);
+                box-shadow: var(--sh-card);
+                object-fit: cover;
+                background: var(--panel);
+            }
+            .hero-portrait .pcap {
+                margin-top: 10px;
+                font-family: var(--mono);
+                font-size: var(--t-micro);
+                color: var(--muted);
+                letter-spacing: 0.04em;
+                text-align: center;
+            }
+
+            .sec {
+                padding: 72px 0;
+                border-bottom: 1px solid var(--line);
+            }
+            .sec .wrap {
+                display: grid;
+                grid-template-columns: var(--rail) 1fr;
+                gap: 40px;
+                align-items: start;
+            }
+            .sec-label {
+                position: sticky;
+                top: 96px;
+                font-family: var(--mono);
+                font-size: var(--t-meta);
+                letter-spacing: 0.04em;
+                text-transform: uppercase;
+                color: var(--slate);
+            }
+            .sec-label .n {
+                display: block;
+                font-size: var(--t-h3);
+                font-weight: 500;
+                color: var(--accent-line);
+                -webkit-text-stroke: 0;
+                letter-spacing: -0.02em;
+                margin-bottom: 10px;
+                text-transform: none;
+            }
+            .sec-label .n b {
+                color: var(--accent);
+                font-weight: 600;
+            }
+            .sec-body {
+                min-width: 0;
+            }
+
+            .lead {
+                font-size: var(--t-lg);
+                line-height: 1.55;
+                color: var(--ink);
+                font-weight: 400;
+                letter-spacing: -0.003em;
+            }
+            .sec-body p + p {
+                margin-top: 18px;
+            }
+            .sec-body p {
+                color: var(--slate);
+            }
+            p b {
+                color: var(--ink);
+                font-weight: 600;
+            }
+            .hl {
+                color: var(--accent-ink);
+                font-weight: 600;
+            }
+
+            .subsec {
+                margin-top: 44px;
+            }
+            .subsec:first-child {
+                margin-top: 0;
+            }
+            .sub-head {
+                display: flex;
+                align-items: center;
+                gap: 14px;
+                margin-bottom: 18px;
+            }
+            .sub-tag {
+                font-family: var(--mono);
+                font-size: var(--t-meta);
+                letter-spacing: 0.06em;
+                text-transform: uppercase;
+                color: var(--accent);
+                display: inline-flex;
+                align-items: center;
+                gap: 9px;
+            }
+            .sub-tag::before {
+                content: "";
+                width: 7px;
+                height: 7px;
+                background: var(--accent);
+                border-radius: 2px;
+            }
+            .sub-rule {
+                flex: 1;
+                height: 1px;
+                background: var(--line);
+            }
+            .sub-when {
+                font-family: var(--mono);
+                font-size: var(--t-micro);
+                color: var(--muted);
+                white-space: nowrap;
+            }
+            .subsec > p {
+                color: var(--slate);
+            }
+
+            .shot {
+                margin-top: 22px;
+            }
+            .shot img {
+                display: block;
+                width: 100%;
+                aspect-ratio: 2654 / 1358;
+                height: auto;
+                border-radius: 12px;
+                border: 1px solid var(--line-2);
+                box-shadow: var(--sh-card);
+                object-fit: cover;
+                background: var(--panel);
+            }
+            .shot figcaption {
+                margin-top: 10px;
+                font-family: var(--mono);
+                font-size: var(--t-micro);
+                letter-spacing: 0.04em;
+                color: var(--muted);
+                text-transform: uppercase;
+            }
+
+            .split {
+                margin-top: 22px;
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 28px;
+            }
+            .card {
+                background: var(--surface);
+                border: 1px solid var(--line-2);
+                border-radius: 12px;
+                padding: 22px;
+            }
+            @media (min-width: 1101px) {
+                .card {
+                    padding: 32px;
+                }
+            }
+            .card-shot {
+                margin: -22px -22px 18px -22px;
+                border-radius: 11px 11px 0 0;
+                overflow: hidden;
+            }
+            .card-shot img {
+                display: block;
+                width: 100%;
+                height: 192px;
+                object-fit: cover;
+                background: var(--panel);
+                border-bottom: 1px solid var(--line-2);
+            }
+            @media (min-width: 1101px) {
+                .card-shot {
+                    margin: -32px -32px 18px -32px;
+                    border-radius: 11px 11px 0 0;
+                }
+                .card-shot img {
+                    height: auto;
+                    aspect-ratio: 30 / 11;
+                    border-radius: 0;
+                    object-position: top;
+                    cursor: zoom-in;
+                    border-bottom: 1px solid var(--line-2);
+                }
+            }
+            #lightbox {
+                display: none;
+                position: fixed;
+                inset: 0;
+                background: rgba(0, 0, 0, 0.85);
+                z-index: 9999;
+                align-items: center;
+                justify-content: center;
+                cursor: zoom-out;
+            }
+            #lightbox.open {
+                display: flex;
+            }
+            #lightbox img {
+                max-width: 90vw;
+                max-height: 90vh;
+                object-fit: contain;
+                border-radius: 8px;
+                box-shadow: 0 24px 80px rgba(0, 0, 0, 0.5);
+            }
+            .card .for {
+                display: inline-flex;
+                align-items: center;
+                gap: 8px;
+                font-size: var(--t-sm);
+                font-weight: 600;
+                color: var(--ink);
+                margin-bottom: 10px;
+            }
+            .card .for::before {
+                content: "";
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                background: var(--accent);
+            }
+            .card p {
+                font-size: var(--t-sm);
+                color: var(--slate);
+                line-height: 1.55;
+            }
+
+            .list {
+                margin-top: 22px;
+                position: relative;
+            }
+            .list::before {
+                content: "";
+                position: absolute;
+                left: 12px;
+                top: 0;
+                bottom: 0;
+                width: 1px;
+                background: var(--line);
+            }
+            .list .row {
+                display: grid;
+                grid-template-columns: 26px 1fr;
+                gap: 16px;
+                padding: 18px 0;
+                position: relative;
+            }
+            .list .row .ix {
+                font-family: var(--mono);
+                font-size: var(--t-sm);
+                color: var(--accent);
+                padding-top: 1px;
+                background: var(--surface);
+                position: relative;
+                z-index: 1;
+                text-align: center;
+            }
+            .list .row h4 {
+                font-size: var(--t-body);
+                font-weight: 600;
+                color: var(--ink);
+                margin-bottom: 5px;
+                letter-spacing: -0.01em;
+            }
+            .list .row p {
+                font-size: var(--t-sm);
+                color: var(--slate);
+                line-height: 1.55;
+            }
+
+            .tenets {
+                list-style: none;
+                counter-reset: t;
+            }
+            .tenets li {
+                counter-increment: t;
+                display: grid;
+                grid-template-columns: 54px 1fr;
+                gap: 18px;
+                padding: 22px 0;
+            }
+            .tenets li::before {
+                content: counter(t, decimal-leading-zero);
+                font-family: var(--mono);
+                font-size: var(--t-lg);
+                font-weight: 500;
+                color: var(--accent);
+            }
+            .tenets h4 {
+                font-size: var(--t-h4);
+                font-weight: 600;
+                color: var(--ink);
+                letter-spacing: -0.015em;
+                margin-bottom: 8px;
+            }
+            .tenets p {
+                font-size: var(--t-sm);
+                color: var(--slate);
+                line-height: 1.58;
+                max-width: 64ch;
+            }
+            .tenets em {
+                color: var(--accent-ink);
+                font-style: italic;
+            }
+
+            .entry {
+                display: grid;
+                grid-template-columns: 152px 1fr;
+                gap: 24px;
+                padding: 22px 0;
+            }
+            .entry .when {
+                font-family: var(--mono);
+                font-size: var(--t-meta);
+                color: var(--muted);
+                padding-top: 3px;
+                white-space: nowrap;
+            }
+            .entry.now .when {
+                color: var(--accent);
+            }
+            .entry .role {
+                font-size: var(--t-lg);
+                font-weight: 600;
+                color: var(--ink);
+                letter-spacing: -0.012em;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                flex-wrap: wrap;
+            }
+            .entry .at {
+                color: var(--accent-ink);
+            }
+            .entry .nowtag {
+                font-family: var(--mono);
+                font-size: 9px;
+                letter-spacing: 0.1em;
+                text-transform: uppercase;
+                color: var(--accent);
+                border: 1px solid var(--accent-line);
+                background: var(--accent-soft);
+                border-radius: 5px;
+                padding: 3px 7px;
+            }
+            .entry .where {
+                font-size: var(--t-sm);
+                color: var(--muted);
+                margin-top: 3px;
+            }
+            .stack {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 7px;
+                margin-top: 12px;
+            }
+            .chip {
+                font-family: var(--mono);
+                font-size: var(--t-micro);
+                color: var(--slate);
+                padding: 4px 10px;
+                border-radius: 6px;
+                border: 1px solid var(--line-2);
+                background: var(--surface);
+            }
+
+            .edu {
+                display: grid;
+                gap: 16px;
+            }
+            .degree {
+                background: var(--surface);
+                border: 1px solid var(--line-2);
+                border-radius: 12px;
+                padding: 24px;
+            }
+            .degree-top {
+                display: grid;
+                grid-template-columns: 1fr auto;
+                gap: 8px 16px;
+                align-items: start;
+            }
+            .degree h4 {
+                font-size: var(--t-lg);
+                font-weight: 600;
+                color: var(--ink);
+                letter-spacing: -0.012em;
+                line-height: 1.3;
+            }
+            .degree-when {
+                font-family: var(--mono);
+                font-size: var(--t-meta);
+                color: var(--muted);
+                white-space: nowrap;
+                padding-top: 3px;
+            }
+            .degree-sub {
+                font-size: var(--t-sm);
+                color: var(--accent-ink);
+                margin-top: 4px;
+            }
+            .degree p {
+                font-size: var(--t-sm);
+                color: var(--slate);
+                margin-top: 12px;
+                line-height: 1.55;
+            }
+            .grades {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 8px;
+                margin-top: 14px;
+            }
+            .grade {
+                font-family: var(--mono);
+                font-size: var(--t-micro);
+                color: var(--ink);
+                padding: 5px 10px;
+                border-radius: 6px;
+                background: var(--panel);
+                border: 1px solid var(--line-2);
+                white-space: nowrap;
+            }
+            .grade b {
+                color: var(--accent-ink);
+            }
+
+            .foot {
+                padding: 64px 0 56px;
+            }
+            .foot .wrap {
+                display: grid;
+                grid-template-columns: var(--rail) 1fr;
+                gap: 40px;
+                align-items: start;
+            }
+            .foot .links {
+                display: flex;
+                gap: 12px;
+                flex-wrap: wrap;
+            }
+            .foot .lead {
+                margin-bottom: 24px;
+                max-width: 24ch;
+            }
+            .endbar {
+                border-top: 1px solid var(--line);
+                background: var(--surface);
+            }
+            .endbar .wrap {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 16px;
+                padding: 24px 40px;
+                flex-wrap: wrap;
+            }
+            .colophon {
+                font-family: var(--mono);
+                font-size: var(--t-micro);
+                color: var(--muted);
+                letter-spacing: 0.03em;
+                white-space: nowrap;
+            }
+            .totop {
+                font-family: var(--mono);
+                font-size: var(--t-micro);
+                color: var(--muted);
+                letter-spacing: 0.03em;
+                white-space: nowrap;
+                transition: color 0.15s ease;
+            }
+            .totop:hover {
+                color: var(--accent-ink);
+            }
+
+            @media (max-width: 1100px) {
+                .hero .wrap {
+                    grid-template-columns: 1fr;
+                    gap: 36px;
+                }
+                .hero-portrait {
+                    width: 160px;
+                    order: -1;
+                }
+                .hero-portrait .portrait-img {
+                    width: 160px;
+                    height: 190px;
+                }
+                .sec .wrap,
+                .foot .wrap {
+                    grid-template-columns: 1fr;
+                    gap: 18px;
+                }
+                .sec-label {
+                    position: static;
+                }
+                .sec-label .n {
+                    display: inline-block;
+                    margin-right: 12px;
+                    margin-bottom: 0;
+                }
+                .tb-nav {
+                    display: none;
+                }
+                .split {
+                    grid-template-columns: 1fr;
+                }
+                .card-shot--portal img {
+                    height: auto;
+                    aspect-ratio: 800 / 425;
+                }
+                .card-shot--console img {
+                    height: auto;
+                    aspect-ratio: 800 / 410;
+                }
+            }
+            @media (max-width: 560px) {
+                .wrap {
+                    padding: 0 22px;
+                }
+                .name {
+                    font-size: 44px;
+                }
+                .split {
+                    grid-template-columns: 1fr;
+                }
+                .entry {
+                    grid-template-columns: 1fr;
+                    gap: 8px;
+                }
+                .hero {
+                    padding: 56px 0 48px;
+                }
+                .sub-head {
+                    flex-wrap: wrap;
+                    gap: 8px 14px;
+                }
+                .sub-when {
+                    white-space: normal;
+                    flex-basis: 100%;
+                }
+            }
+            @media (prefers-reduced-motion: reduce) {
+                html {
+                    scroll-behavior: auto;
+                }
+                .caret,
+                .tb-mark .live {
+                    animation: none;
+                }
+            }
+        </style>
+    </head>
+    <body id="top">
+        <nav class="topbar">
+            <div class="wrap">
+                <a class="tb-mark" href="#top"><span class="live"></span> nuno roma</a>
+                <div class="tb-nav">
+                    <a href="#intro"><span class="n">01</span>Intro</a>
+                    <a href="#connect"><span class="n">02</span>Aptoide Connect</a>
+                    <a href="#manifesto"><span class="n">03</span>Manifesto</a>
+                    <a href="#timeline"><span class="n">04</span>Timeline</a>
+                    <a href="#education"><span class="n">05</span>Education</a>
+                    <a href="#contact"><span class="n">06</span>Contact</a>
+                </div>
+                <button class="tb-theme" id="theme-toggle" aria-label="Toggle dark mode">
+                    <svg class="icon-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                    <svg class="icon-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                </button>
+                <a class="tb-cta" href="mailto:ncroma@gmail.com">Get in touch</a>
+            </div>
+        </nav>
+
+        <header class="hero">
+            <div class="wrap">
+                <div class="hero-main">
+                    <div class="kick">Full Stack Developer</div>
+                    <h1 class="name"><span id="typed-name"></span><span class="caret"></span></h1>
+                    <div class="hero-meta">
+                        <span
+                            ><svg viewBox="0 0 24 24">
+                                <path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11Z"></path>
+                                <circle cx="12" cy="10" r="2.5"></circle>
+                            </svg>
+                            Portugal</span
+                        >
+                        <span>· Open to new opportunities</span>
+                    </div>
+                    <div class="cta">
+                        <a class="btn primary" href="mailto:ncroma@gmail.com">
+                            <svg viewBox="0 0 24 24">
+                                <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+                                <path d="m3 7 9 6 9-6"></path>
+                            </svg>
+                            ncroma@gmail.com
+                        </a>
+                        <a class="btn" href="https://www.linkedin.com/in/nuno-coimbra-roma" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24">
+                                <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+                                <path d="M7 10v7M7 7v.01M11 17v-4a2 2 0 0 1 4 0v4M11 13v4"></path>
+                            </svg>
+                            LinkedIn
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-portrait">
+                    <img class="portrait-img" src="profile-picture.png" alt="João Melo" />
+                </div>
+            </div>
+        </header>
+
+        <section class="sec" id="intro">
+            <div class="wrap">
+                <div class="sec-label">
+                    <span class="n"><b>01</b></span
+                    >Introduction
+                </div>
+                <div class="sec-body">
+                    <p class="lead">
+                        I am a full-stack developer with deep roots in <b>frontend engineering</b> and a proven track record across the full delivery lifecycle — from building pixel-precise interfaces
+                        backed by scalable services to designing test automation frameworks and serving agile teams as Scrum Master.
+                    </p>
+                    <p>
+                        My background spans from QA engineering to software development, giving me an unusually broad perspective on what it takes to ship something that holds. That same eye for what
+                        can go wrong also shows one what could be better — I pay attention to that gap and find the moments inside a feature where the difference between good and
+                        <span class="hl">excellent</span> gets decided.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="sec" id="connect">
+            <div class="wrap">
+                <div class="sec-label">
+                    <span class="n"><b>02</b></span
+                    >Aptoide Connect
+                </div>
+                <div class="sec-body">
+                    <p class="lead">
+                        Aptoide Connect is Aptoide's platform for app distribution and monetization. It has two surfaces: a Portal — a public landing page that brings people to the platform — and a
+                        Console, the operational system where developers and store partners work. The Portal speaks outward while the Console works inward. I shaped both.
+                    </p>
+
+                    <div class="subsec" style="margin-top: 36px">
+                        <div class="sub-head"><span class="sub-tag">Challenge</span><span class="sub-rule"></span></div>
+                        <p>Two distinct surfaces, each requiring a different frontend focus:</p>
+                        <div class="split">
+                            <article class="card">
+                                <div class="card-shot card-shot--portal"><img src="aptoide-connect-portal.png" alt="Aptoide Connect — Portal" /></div>
+                                <div class="for">The Portal</div>
+                                <p>The public-facing entry point for all of Aptoide Connect's services — the first surface developers and app store partners interact with.</p>
+                                <p style="margin-top: 10px">
+                                    This is where I pushed hardest on frontend craft: SEO architecture, performance optimization, mobile-first development, and rigorous cross-browser QA to deliver the
+                                    best possible front page for the product.
+                                </p>
+                                <div class="stack">
+                                    <span class="chip">SEO</span>
+                                    <span class="chip">Performance</span>
+                                    <span class="chip">Mobile-first</span>
+                                    <span class="chip">React.js</span>
+                                </div>
+                            </article>
+                            <article class="card">
+                                <div class="card-shot card-shot--console"><img src="aptoide-connect-console.png" alt="Aptoide Connect — Console" /></div>
+                                <div class="for">The Console</div>
+                                <p>
+                                    A management platform serving two distinct user types: developers submitting and managing app lifecycles, integrating billing SDKs, and tracking distribution
+                                    metrics — and app store partners controlling and optimizing the monetization and distribution streams fed by our catalog.
+                                </p>
+                                <p style="margin-top: 10px">
+                                    This meant implementing and maintaining features like payment flows, a deeply configurable app distribution layer, wallet and funds management, and a multi-state
+                                    account system covering distinct user roles, granular permissions, and authentication settings — all fully responsive across desktop and mobile.
+                                </p>
+                                <div class="stack">
+                                    <span class="chip">Business-critical Flows</span>
+                                    <span class="chip">State Management</span>
+                                    <span class="chip">Responsive</span>
+                                    <span class="chip">Angular</span>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+
+                    <div class="subsec">
+                        <div class="sub-head"><span class="sub-tag">My Role</span><span class="sub-rule"></span></div>
+                        <p>
+                            Both products I worked on were someone else's starting point. I made them mine — and what started as a QA position kept growing in responsibility, breadth, and in the kind
+                            of engineer it pushed me to become.
+                        </p>
+                        <div class="list">
+                            <div class="row">
+                                <span class="ix">01</span>
+                                <div>
+                                    <h4>QA with a Developer's Eye</h4>
+                                    <p>
+                                        I joined as a QA engineer but started building automation from day one — programming wasn't new to me, and manual testing at scale felt like a problem worth
+                                        solving properly.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <span class="ix">02</span>
+                                <div>
+                                    <h4>Scrum Mastering</h4>
+                                    <p>
+                                        I took on the Scrum Master role alongside my technical work — ensuring agile practices were followed and all ceremonies ran smoothly — and also stepped up for
+                                        product demos and OKRs.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <span class="ix">03</span>
+                                <div>
+                                    <h4>The Developer-QA Model</h4>
+                                    <p>
+                                        I became the first developer-QA on the team — someone who both builds and tests. It proved its worth and became the standard: everyone develops, everyone tests.
+                                        The dedicated QA role dissolved into the team, but the automation and logging I built didn't — they became household tools the team kept evolving, and in some
+                                        form they're still running today.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <span class="ix">04</span>
+                                <div>
+                                    <h4>Portal, Console, and the Drive for Quality</h4>
+                                    <p>
+                                        I moved into development on the Admin Console first, then on both the Portal and the Console — all in Angular at the time. The Portal shifted to server-side
+                                        rendering for SEO; the Console went through deep rework to become a platform developers and partners could genuinely trust with their business.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <span class="ix">05</span>
+                                <div>
+                                    <h4>Rebrand &amp; Learning React</h4>
+                                    <p>
+                                        A product rebrand reshaped both surfaces — most visibly the Portal. Alongside that I picked up React, building independent product and marketing pages that
+                                        pushed me outside the core Angular codebase.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <span class="ix">06</span>
+                                <div>
+                                    <h4>AI, Speed, and Going Full Stack</h4>
+                                    <p>
+                                        When AI entered our workflow everything accelerated. That's when my QA background showed its real value: moving fast with AI requires knowing exactly what to
+                                        verify. The Portal was migrated from Angular to React, unlocking proper SSR — a migration that would have been impractical without AI. My productivity spiked,
+                                        and the bandwidth that created is where I started crossing into backend territory for the first time — picking up Node.js tasks and taking my first real steps
+                                        as a full-stack developer.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sec" id="manifesto">
+            <div class="wrap">
+                <div class="sec-label">
+                    <span class="n"><b>03</b></span
+                    >Manifesto
+                </div>
+                <div class="sec-body">
+                    <p class="lead" style="margin-bottom: 30px">The principles that shape how I build, test, and ship software — refined over years of doing all three.</p>
+                    <ol class="tenets">
+                        <li>
+                            <div>
+                                <h4>Requirements Are the Floor, Not the Ceiling</h4>
+                                <p>A spec defines what's needed, not what's possible.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <h4>Quality Is Not a Phase</h4>
+                                <p>Quality isn't a phase at the end of development — it's a discipline baked into every step.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <h4>AI Accelerates. Judgement Guides.</h4>
+                                <p>The engineers who thrive with AI aren't the ones who generate the most code; they're the ones who own every line they ship.</p>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <section class="sec" id="timeline">
+            <div class="wrap">
+                <div class="sec-label">
+                    <span class="n"><b>04</b></span
+                    >Timeline
+                </div>
+                <div class="sec-body">
+                    <div class="log">
+                        <div class="entry">
+                            <div class="when">2025 — 2026</div>
+                            <div>
+                                <div class="role">Full Stack Engineer <span class="at">· Aptoide</span></div>
+                                <div class="where">Lisbon, Portugal</div>
+                                <div class="stack">
+                                    <span class="chip">React</span><span class="chip">Angular</span><span class="chip">TypeScript</span><span class="chip">Node.js</span
+                                    ><span class="chip">Express.js</span><span class="chip">PostgreSQL</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="entry">
+                            <div class="when">2021 — 2025</div>
+                            <div>
+                                <div class="role">Front End Engineer <span class="at">· Aptoide</span></div>
+                                <div class="where">Lisbon, Portugal</div>
+                                <div class="stack"><span class="chip">React</span><span class="chip">Angular</span><span class="chip">TypeScript</span></div>
+                            </div>
+                        </div>
+                        <div class="entry">
+                            <div class="when">2020 — 2021</div>
+                            <div>
+                                <div class="role">QA Engineer & Scrum Master <span class="at">· Aptoide</span></div>
+                                <div class="where">Lisbon, Portugal</div>
+                                <div class="stack"><span class="chip">QA</span><span class="chip">Test Automation</span><span class="chip">Scrum</span><span class="chip">JavaScript</span></div>
+                            </div>
+                        </div>
+                        <div class="entry">
+                            <div class="when">2019 — 2020</div>
+                            <div>
+                                <div class="role">QA Automation Engineer <span class="at">· Aptoide</span></div>
+                                <div class="where">Lisbon, Portugal</div>
+                                <div class="stack"><span class="chip">QA</span><span class="chip">Test Automation</span></div>
+                            </div>
+                        </div>
+                        <div class="entry">
+                            <div class="when">2018 — 2019</div>
+                            <div>
+                                <div class="role">QA Automation Engineer <span class="at">· Celfocus</span></div>
+                                <div class="where">Lisbon, Portugal</div>
+                                <div class="stack">
+                                    <span class="chip">QA</span><span class="chip">Test Automation</span><span class="chip">Selenium</span><span class="chip">Java</span
+                                    ><span class="chip">Docker</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="entry">
+                            <div class="when">2016 — 2018</div>
+                            <div>
+                                <div class="role">Quality Assurance Engineer <span class="at">· PacSis – Linking Consumers & Brands</span></div>
+                                <div class="where">Lisbon, Portugal</div>
+                                <div class="stack"><span class="chip">QA</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sec" id="education">
+            <div class="wrap">
+                <div class="sec-label">
+                    <span class="n"><b>05</b></span
+                    >Education
+                </div>
+                <div class="sec-body">
+                    <div class="edu">
+                        <article class="degree">
+                            <div class="degree-top">
+                                <h4>Bachelor's Degree · Computer Science</h4>
+                                <div class="degree-when">2010 — 2014</div>
+                            </div>
+                            <div class="degree-sub">Instituto Superior Miguel Torga, Coimbra</div>
+                            <p>
+                                Three-year programme covering programming, software engineering, databases, web development, and operating systems — with a software development track focused on system
+                                architecture and application lifecycle from specification through testing.
+                            </p>
+                            <div class="grades">
+                                <span class="grade">Final Grade <b>13 / 20</b></span>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="foot" id="contact">
+            <div class="wrap">
+                <div class="sec-label">
+                    <span class="n"><b>06</b></span
+                    >Contact
+                </div>
+                <div class="sec-body">
+                    <div class="links">
+                        <a class="btn primary" href="mailto:ncroma@gmail.com">
+                            <svg viewBox="0 0 24 24">
+                                <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+                                <path d="m3 7 9 6 9-6"></path>
+                            </svg>
+                            ncroma@gmail.com
+                        </a>
+                        <a class="btn" href="https://www.linkedin.com/in/nuno-coimbra-roma" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24">
+                                <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+                                <path d="M7 10v7M7 7v.01M11 17v-4a2 2 0 0 1 4 0v4M11 13v4"></path>
+                            </svg>
+                            in/nuno-roma-08a056b9
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div class="endbar">
+            <div class="wrap">
+                <span class="colophon">© 2026 Nuno Roma · Portugal</span>
+                <a class="totop" href="#top">Back to top ↑</a>
+            </div>
+        </div>
+
+        <div id="lightbox"><img src="" alt="" /></div>
+        <script>
+            (function () {
+                const root = document.documentElement;
+                const btn = document.getElementById("theme-toggle");
+                const sys = () => window.matchMedia("(prefers-color-scheme: dark)").matches;
+                const saved = localStorage.getItem("theme");
+
+                function apply(dark) {
+                    if (dark) {
+                        root.setAttribute("data-theme", "dark");
+                    } else {
+                        root.setAttribute("data-theme", "light");
+                    }
+                }
+
+                // On load: saved preference wins, else follow system
+                apply(saved ? saved === "dark" : sys());
+
+                btn.addEventListener("click", () => {
+                    const isDark = root.getAttribute("data-theme") === "dark";
+                    const next = !isDark;
+                    apply(next);
+                    localStorage.setItem("theme", next ? "dark" : "light");
+                });
+
+                // React to system changes only if user hasn't manually chosen
+                window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", (e) => {
+                    if (!localStorage.getItem("theme")) apply(e.matches);
+                });
+            })();
+        </script>
+        <script>
+            (function () {
+                const el = document.getElementById("typed-name");
+                const wrong = "Roma";
+                const right = "Nuno Roma";
+
+                // Variable typing delays — heavier chars, after spaces, slightly erratic
+                const typeDelay = () => 80 + Math.random() * 90;
+                const deleteDelay = () => 55 + Math.random() * 45;
+                const jitter = (base) => base + (Math.random() - 0.5) * 30;
+
+                let current = "";
+
+                function type(text, i, cb) {
+                    if (i >= text.length) return cb && cb();
+                    // Slight pause after space, like a real typist
+                    const delay = text[i] === " " ? jitter(160) : typeDelay();
+                    setTimeout(() => {
+                        current += text[i];
+                        el.textContent = current;
+                        type(text, i + 1, cb);
+                    }, delay);
+                }
+
+                function del(n, cb) {
+                    if (n <= 0) return cb && cb();
+                    setTimeout(() => {
+                        current = current.slice(0, -1);
+                        el.textContent = current;
+                        del(n - 1, cb);
+                    }, deleteDelay());
+                }
+
+                // Initial pause before starting
+                setTimeout(() => {
+                    // Type "Nuno Mig"
+                    type(wrong, 0, () => {
+                        // Pause — user notices mistake
+                        setTimeout(() => {
+                            // Delete everything
+                            del(wrong.length, () => {
+                                // Brief pause before retyping
+                                setTimeout(() => {
+                                    // Type the correct name
+                                    type(right, 0);
+                                }, 380);
+                            });
+                        }, 720);
+                    });
+                }, 600);
+            })();
+        </script>
+        <script>
+            (function () {
+                const lb = document.getElementById("lightbox");
+                const lbImg = lb.querySelector("img");
+                document.querySelectorAll(".card-shot img").forEach((img) => {
+                    img.addEventListener("click", () => {
+                        if (window.matchMedia("(max-width: 1100px)").matches) return;
+                        lbImg.src = img.src;
+                        lbImg.alt = img.alt;
+                        lb.classList.add("open");
+                    });
+                });
+                lb.addEventListener("click", () => lb.classList.remove("open"));
+                document.addEventListener("keydown", (e) => {
+                    if (e.key === "Escape") lb.classList.remove("open");
+                });
+            })();
+            (function () {
+                const links = [...document.querySelectorAll(".tb-nav a")];
+                const map = new Map(links.map((a) => [a.getAttribute("href").slice(1), a]));
+                if ("IntersectionObserver" in window) {
+                    const spy = new IntersectionObserver(
+                        (entries) => {
+                            entries.forEach((e) => {
+                                if (e.isIntersecting) {
+                                    links.forEach((l) => l.classList.remove("on"));
+                                    const a = map.get(e.target.id);
+                                    if (a) a.classList.add("on");
+                                }
+                            });
+                        },
+                        { rootMargin: "-40% 0px -55% 0px", threshold: 0 }
+                    );
+                    document.querySelectorAll(".sec, .foot").forEach((s) => spy.observe(s));
+                }
+            })();
+        </script>
+    </body>
+</html>
